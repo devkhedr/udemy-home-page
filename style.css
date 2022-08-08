@@ -49,13 +49,13 @@ button {
   background-color: rgb(255, 255, 255);
 }
 
-.options {
+.options button {
   border: 0px;
   font-size: 13px;
   margin: 6px;
 }
 
-.options:hover {
+.options button:hover {
   color: blueviolet;
 }
 
