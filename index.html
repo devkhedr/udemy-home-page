@@ -1,244 +1,399 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Online Courses - Learn Anything, On Your Schedule | Udemy</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="icon" href="Images/tabIcon.png" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
-    />
-  </head>
+body {
+  font-family: SuisseWorks, Georgia, Times, times new roman, serif,
+    apple color emoji, segoe ui emoji, segoe ui symbol;
+}
 
-  <body>
-    <header>
-      <ul class="navbar">
-        <li id="bars-icon">
-          <button>
-            <i class="fa fa-bars"></i>
-          </button>
-        </li>
-        <li>
-          <a href="index.html">
-            <img
-              alt="logo"
-              class="logo"
-              src="https://www.udemy.com/staticx/udemy/images/v7/logo-udemy.svg"
-            />
-          </a>
-        </li>
-        <li class="options" id="cate">
-          <button>Categories</button>
-        </li>
-        <li class="search-box">
-          <button type="submit" class="icons" id="search-icon">
-            <i class="fa fa-search"></i>
-          </button>
-          <input
-            placeholder="Search for anything"
-            class="search-text"
-            required
-          />
-        </li>
-        <li class="options" id="ude-bs">
-          <button>Udemy Business</button>
-        </li>
-        <li class="options" id="te-ude">
-          <button>Teach on Udemy</button>
-        </li>
-        <li>
-          <button id="fa-se">
-            <i class="fa fa-search"></i>
-          </button>
-          <button id="cart-icon">
-            <i class="fa fa-cart-shopping"></i>
-          </button>
-        </li>
-        <li class="logIn">
-          <a>
-            <button>Log in</button>
-          </a>
-        </li>
-        <li class="signUp">
-          <a>
-            <button>Sign up</button>
-          </a>
-        </li>
-        <li class="lang">
-          <button>
-            <i class="fa fa-globe"></i>
-          </button>
-        </li>
-      </ul>
-    </header>
-    <section id="container">
-      <div class="headerphotowithtext">
-        <img src="Images/header-photo.jpg" />
-        <div class="text">
-          <span class="first-line">Learning that gets you </span> <br />
-          <br />
-          <span class="second-line"
-            >Skills for your present (and your future). Get started with us.
-          </span>
-        </div>
-        <div class="small-text">
-          <h1>Learning that gets you</h1>
-          <p>Skills for your present (and your future). Get started with us.</p>
-        </div>
-      </div>
-      <div class = "edu">
-        <h1>A broad selection of courses</h1>
-        <p>
-          Choose from 185,000 online video courses with new additions published every month</p>
-        <div class = "tabs">
-          <button style = "color: black;">Python</button>
-          <button>Excel</button>
-          <button>Web Development</button>
-          <button>JavaScript</button>
-          <button>Data Science</button>
-          <button>AWS Certification</button>
-          <button>Drawing</button>
-        </div>
-      </div>
-      <section class="courses">
-        <div class="intro-python">
-          <h2>Expand your career opportunities with Python</h2>
-          <p>
-            Take one of Udemy’s range of Python courses and learn how to code
-            using this incredibly useful language. Its<br />
-            simple syntax and readability makes Python perfect for Flask ,
-            Django, data science, and machine learning. You'll <br />
-            learn how to build everything from games to sites to apps. Choose
-            from a range of courses that will appeal to...
-          </p>
+#container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
-          <button class="explore">Explore Python</button>
-        </div>
-        <div class="python-list">
-          <div class="recommend">
-            <img src="Images/python1.jpg" />
-            <h5>Learn Python: The Complete Python Programming Course</h5>
-            <span class="authorName">Avinash Jain, The Codex </span>
-            <span class="rate">
-              4.4
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star-half-stroke"></i>
-              <span class="number"> (2,906) </span>
-            </span>
+a {
+  text-decoration: none;
+}
 
-            <span class="price"> E&pound;679.99 </span>
-            <button></button>
-          </div>
+button {
+  cursor: pointer;
+  font-size: 12px;
+  border: 0px;
+}
 
-          <div class="recommend">
-            <img src="Images/python2.jpg" />
-            <h5>Learning Python for Data Analysis and Visualization</h5>
-            <span class="authorName">Jose Portilla</span>
-            <span class="rate">
-              4.4
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <span class="number"> (17,981) </span>
-            </span>
-            <span class="price"> E&pound;1,599.99 </span>
-            <button class="bestseller">Bestseller</button>
-          </div>
+.navbar {
+  display: flex;
+  padding: 0;
+  justify-content: space-evenly;
+  margin: 15px 0px 10px 0px;
+  list-style-type: none;
+  align-items: center;
+}
 
-          <div class="recommend">
-            <img src="Images/python3.jpg" />
-            <h5>Python for Beginners - Learn Programming from scratch</h5>
-            <span class="authorName">Edwin diaz</span>
-            <span class="rate">
-              4.4
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star-half-stroke"></i>
-              <span class="number"> (1,762) </span>
-            </span>
-            <span class="price"> E&pound;679.99 </span>
-            <button></button>
-          </div>
+#fa-se {
+  font-size: 20px;
+  display: none;
+}
 
-          <div class="recommend">
-            <img src="Images/python4.jpg" />
-            <h5>Learn Python: Python for Beginners with OOP</h5>
-            <span class="authorName">Abrar hossam </span>
-            <span class="rate">
-              4.2
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star-half-stroke"></i>
-              <span class="number"> (2,766) </span>
-            </span>
-            <span class="price"> E&pound;319.99 </span>
-            <button></button>
-          </div>
+#bars-icon button {
+  font-size: 30px;
+  display: none;
+}
 
-          <div class="recommend">
-            <img src="Images/python5.jpg" />
-            <h5>Python Beyond the Basics - Object-Oriented Programming</h5>
-            <span class="authorName">Adams ai</span>
-            <span class="rate">
-              4.4
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <span class="number"> (2,929) </span>
-            </span>
-            <span class="price"> E&pound;519.99 </span>
-            <button class="bestseller">Bestseller</button>
-          </div>
-          <div class="recommend">
-            <img src="Images/python4.jpg" />
-            <h5>Learn Python from zero to hero 2022</h5>
-            <span class="authorName">Bassem Amin</span>
-            <span class="rate">
-              4.5
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <span class="number"> (1,200) </span>
-            </span>
-            <span class="price"> E&pound;519.99 </span>
-            <button class="bestseller">Bestseller</button>
-          </div>
+.logo {
+  width: 90px;
+  margin: 0px 10px 0px 15px;
+}
 
-          <div class="recommend">
-            <img src="Images/python5.jpg" />
-            <h5>Learn Python for ML and Data Science 2022</h5>
-            <span class="authorName">Harry Maguire</span>
-            <span class="rate">
-              4.5
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <span class="number"> (1,200) </span>
-            </span>
-            <span class="price"> E&pound;519.99 </span>
-            <button></button>
-          </div>
-        </div>
-      </section>
-    </section>
-    <footer></footer>
-  </body>
-</html>
+.navbar button {
+  background-color: rgb(255, 255, 255);
+}
+
+.options button {
+  border: 0px;
+  font-size: 13px;
+  margin: 6px;
+}
+
+.options button:hover {
+  color: blueviolet;
+}
+
+.search-box {
+  display: flex;
+  flex-grow: 1;
+  align-content: center;
+  border: 1px solid black;
+  align-items: center;
+  border-radius: 60px;
+  padding-left: 10px;
+  background-color: #f7f9fa;
+  margin-right: 12px;
+  margin-left: 10px;
+}
+
+.search-text {
+  border: 0;
+  margin-left: 10px;
+  font-size: 14px;
+  height: 38px;
+  width: 535px;
+  background-color: #f7f9fa;
+  border-radius: 60px;
+}
+
+.search-text:focus {
+  outline: none;
+}
+
+#search-icon {
+  font-size: 14px;
+  background-color: #f7f9fa;
+  color: #a5a5a5;
+  cursor: default;
+}
+
+.icons {
+  border-style: none;
+  background-color: white;
+}
+
+#cart-icon {
+  font-size: 19px;
+  margin-left: 5px;
+}
+
+#cart-icon:hover {
+  color: blueviolet;
+}
+
+.logIn a button {
+  font-weight: bolder;
+  height: 45px;
+  width: 65px;
+  margin-left: 15px;
+  margin-left: 20px;
+  border: 0.1rem solid;
+}
+
+.signUp a button {
+  background-color: #000000;
+  height: 45px;
+  width: 70px;
+  color: rgb(255, 255, 255);
+  font-weight: bolder;
+  margin-left: 10px;
+}
+
+.lang button {
+  font-size: 16px;
+  margin: 0px 10px 0px 10px;
+  color: black;
+  height: 45px;
+  width: 45px;
+  background-color: white;
+  border: 0.1rem solid;
+}
+
+.headerphotowithtext {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.headerphotowithtext img {
+  max-width: 100%;
+}
+
+.headerphotowithtext .text {
+  position: absolute;
+  top: 30px;
+  left: 90px;
+  font-size: 18px;
+  position: absolute;
+  padding: 20px 0px 20px 20px;
+  margin: 50px 50px 0px 0px;
+  border: 0px solid white;
+  background-color: white;
+  max-width: 400px;
+  box-shadow: 10px 10px 10px 0px rgb(155, 154, 154);
+}
+
+.headerphotowithtext .small-text {
+  display: none;
+  max-width: 1305px;
+}
+
+.headerphotowithtext .text .first-line {
+  font-weight: bold;
+  font-size: 29px;
+}
+.edu {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+  max-width: 1305px;
+}
+
+.edu h1 {
+  margin: 0;
+  margin-top: 40px;
+  font-size: 33px;
+}
+
+.edu p {
+  font-size: 18px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-family: system-ui;
+}
+
+.edu .tabs button {
+  padding: 0;
+  border: 0;
+  text-align: left;
+  cursor: pointer;
+  color: rgb(146, 146, 146);
+  background-color: white;
+  font-weight: bolder;
+  font-size: 16px;
+  padding-right: 20px;
+}
+
+.edu .tabs button:hover {
+  color: black;
+}
+
+.courses {
+  margin: 20px 0px 0px 0px;
+  border: 0.1rem solid rgb(202, 202, 202);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  padding-left: 0;
+  max-width: 1305px;
+}
+
+.courses .intro-python {
+  margin-left: 20px;
+}
+
+.courses p {
+  font-family: system-ui;
+  font-size: 16px;
+}
+
+.explore {
+  height: 40px;
+  width: 120px;
+  font-size: 12px;
+  border: 1px solid black;
+  background-color: white;
+  font-weight: bold;
+  border-radius: 2px;
+  margin: 10px 0px;
+  margin-bottom: 20px;
+}
+
+.explore:hover {
+  background-color: rgb(226, 226, 226);
+}
+
+.python-list {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 20px;
+  max-width: 1310px;
+  align-items: center;
+}
+
+.python-list .recommend {
+  cursor: pointer;
+  margin-bottom: 25px;
+  margin-right: 12px;
+  width: 245px;
+}
+
+.python-list img {
+  height: 150px;
+  width: 240px;
+}
+
+.python-list h5 {
+  font-size: 16px;
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+
+.python-list .authorName {
+  font-size: 12px;
+  color: rgb(110, 110, 110);
+  margin: 5px 0px;
+  display: block;
+}
+
+.python-list .rate {
+  font-size: 12px;
+  color: rgb(185, 158, 0);
+  font-weight: bolder;
+}
+
+.python-list .number {
+  color: rgb(110, 110, 110);
+  font-weight: 400;
+}
+
+.python-list .price {
+  display: block;
+  margin: 7px 0px;
+  font-weight: bolder;
+  font-size: 15px;
+}
+
+.python-list button {
+  border: 0px;
+  background-color: rgb(255, 255, 255);
+}
+
+.python-list .bestseller {
+  cursor: default;
+  background-color: #eceb98;
+  font-size: 12px;
+  color: rgb(13, 77, 0);
+  font-weight: bold;
+  width: 70px;
+  border: 0px;
+}
+
+/* Responsive design*/
+@media (max-width: 1250px) {
+  .navbar {
+    justify-content: space-between;
+  }
+
+  #ude-bs {
+    display: none;
+  }
+
+  .search-text {
+    width: 540px;
+  }
+
+  .headerphotowithtext .text {
+    top: 30px;
+    left: 80px;
+  }
+}
+
+@media (max-width: 1200px) {
+  #ude-bs {
+    display: none;
+  }
+
+  .search-text {
+    width: 350px;
+  }
+
+  .headerphotowithtext .text {
+    left: 70px;
+    top: 20px;
+  }
+}
+
+@media (max-width: 980px) {
+  #te-ude {
+    display: none;
+  }
+
+  .search-text {
+    width: 340px;
+  }
+
+  .headerphotowithtext .text {
+    left: 50px;
+    top: 10px;
+  }
+}
+
+@media (max-width: 900px) {
+  #bars-icon button,
+  #fa-se {
+    display: inline;
+  }
+
+  .headerphotowithtext .text,
+  .logIn,
+  .signUp,
+  .lang,
+  .search-box,
+  #cate {
+    display: none;
+  }
+
+  .headerphotowithtext .small-text {
+    display: block;
+    text-align: center;
+  }
+
+  .headerphotowithtext h1 {
+    font-size: 35px;
+  }
+}
+
+@media (max-width: 500px) {
+  .headerphotowithtext h1 {
+    font-size: 16px;
+  }
+
+  .headerphotowithtext p {
+    display: inline;
+  }
+}
+
+conatainer {
+  position: relative;
+}
+
+box {
+  position: absolute;
+  top: 100px;
+  left: 100px;
+}
