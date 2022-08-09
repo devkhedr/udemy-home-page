@@ -170,7 +170,7 @@ button {
 .edu {
   display: flex;
   flex-direction: column;
-  margin-left: 20px;
+  margin-left: 0px;
   max-width: 1305px;
 }
 
@@ -188,9 +188,8 @@ button {
 }
 
 .edu .tabs button {
-
+  border: 0;
   padding: 15px 0px;
-  border: 0;  
   cursor: pointer;
   color: rgb(146, 146, 146);
   background-color: white;
