@@ -167,13 +167,11 @@ button {
   font-weight: bold;
   font-size: 29px;
 }
-
 .edu {
-  margin-left:  0px;
-  padding: 15px 0px 5px 0px;
   display: flex;
   flex-direction: column;
-  width: 1300px;
+  margin-left: 20px;
+  max-width: 1305px;
 }
 
 .edu h1 {
