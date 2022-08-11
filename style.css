@@ -3,12 +3,6 @@ body {
     apple color emoji, segoe ui emoji, segoe ui symbol;
 }
 
-#container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
 a {
   text-decoration: none;
 }
@@ -16,7 +10,7 @@ a {
 button {
   cursor: pointer;
   font-size: 12px;
-  border: 0px;
+  border: 0;
 }
 
 .navbar {
@@ -28,33 +22,23 @@ button {
   align-items: center;
 }
 
-#fa-se {
-  font-size: 20px;
-  display: none;
-}
-
-#bars-icon button {
-  font-size: 30px;
-  display: none;
-}
-
-.logo {
+.nav-logo {
   width: 90px;
   margin: 0px 10px 0px 15px;
 }
 
+.search-icon-small-window {
+  font-size: 20px;
+  display: none;
+}
+
+.bars-icon button {
+  font-size: 30px;
+  display: none;
+}
+
 .navbar button {
   background-color: rgb(255, 255, 255);
-}
-
-.options button {
-  border: 0px;
-  font-size: 13px;
-  margin: 6px;
-}
-
-.options button:hover {
-  color: blueviolet;
 }
 
 .search-box {
@@ -65,9 +49,17 @@ button {
   align-items: center;
   border-radius: 60px;
   padding-left: 10px;
-  background-color: #f7f9fa;
+  background-color: #f5f5f5;
   margin-right: 12px;
   margin-left: 10px;
+}
+
+.search-box .search-icon {
+  font-size: 14px;
+  background-color: #f5f5f5;
+  color: #a5a5a5;
+  cursor: default;
+  padding: 10px;
 }
 
 .search-text {
@@ -75,8 +67,8 @@ button {
   margin-left: 10px;
   font-size: 14px;
   height: 38px;
-  width: 535px;
-  background-color: #f7f9fa;
+  width: 100%;
+  background-color: #f5f5f5;
   border-radius: 60px;
 }
 
@@ -84,28 +76,23 @@ button {
   outline: none;
 }
 
-#search-icon {
-  font-size: 14px;
-  background-color: #f7f9fa;
-  color: #a5a5a5;
-  cursor: default;
-}
-
 .icons {
   border-style: none;
-  background-color: white;
 }
 
-#cart-icon {
+.cart-icon {
   font-size: 19px;
   margin-left: 5px;
 }
 
-#cart-icon:hover {
+.cart-icon:hover,
+.category button:hover,
+.udemy-business button:hover,
+.teach-udemy button:hover {
   color: blueviolet;
 }
 
-.logIn a button {
+.log-in a button {
   font-weight: bolder;
   height: 45px;
   width: 65px;
@@ -114,7 +101,7 @@ button {
   border: 0.1rem solid;
 }
 
-.signUp a button {
+.sign-up a button {
   background-color: #000000;
   height: 45px;
   width: 70px;
@@ -123,7 +110,7 @@ button {
   margin-left: 10px;
 }
 
-.lang button {
+.language-icon button {
   font-size: 16px;
   margin: 0px 10px 0px 10px;
   color: black;
@@ -133,24 +120,23 @@ button {
   border: 0.1rem solid;
 }
 
-.headerphotowithtext {
+.container,
+.page-header {
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.headerphotowithtext img {
+.page-header img {
   max-width: 100%;
 }
 
-.headerphotowithtext .text {
+.page-header .text {
   position: absolute;
   top: 30px;
   left: 90px;
-  font-size: 18px;
-  position: absolute;
-  padding: 20px 0px 20px 20px;
+  padding-left: 20px;
   margin: 50px 50px 0px 0px;
   border: 0px solid white;
   background-color: white;
@@ -158,20 +144,17 @@ button {
   box-shadow: 10px 10px 10px 0px rgb(155, 154, 154);
 }
 
-.headerphotowithtext .small-text {
-  display: none;
-  max-width: 1305px;
+.page-header h1 {
+  margin-bottom: 0;
 }
 
-.headerphotowithtext .text .first-line {
-  font-weight: bold;
-  font-size: 29px;
-}
 .edu {
+  max-width: 100%;
+  margin-top: 10px;
+  padding-left: 20px;
   display: flex;
   flex-direction: column;
-  margin-left: 0px;
-  max-width: 1305px;
+  padding-right: 530px;
 }
 
 .edu h1 {
@@ -196,6 +179,7 @@ button {
   font-weight: bolder;
   font-size: 16px;
   padding-right: 20px;
+  width: auto;
 }
 
 .edu .tabs button:hover {
@@ -203,24 +187,24 @@ button {
 }
 
 .courses {
-  margin: 0px 0px 0px 0px;
   border: 0.1rem solid rgb(202, 202, 202);
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  padding-left: 0;
-  max-width: 1305px;
+  margin-top: 10px;
+  padding-left: 30px;
 }
 
-.courses .intro-python {
-  margin-left: 20px;
+.courses .python-intro h1 {
+  font-size: 28px;
+  margin-bottom: 0;
 }
 
 .courses p {
   font-family: system-ui;
-  font-size: 16px;
+  font-size: 17px;
 }
 
-.explore {
+.courses .explore-button {
   height: 40px;
   width: 120px;
   font-size: 12px;
@@ -232,14 +216,13 @@ button {
   margin-bottom: 20px;
 }
 
-.explore:hover {
+.courses .explore-button:hover {
   background-color: rgb(226, 226, 226);
 }
 
 .python-list {
   display: flex;
   flex-wrap: wrap;
-  padding-left: 20px;
   max-width: 1310px;
   align-items: center;
 }
@@ -247,13 +230,13 @@ button {
 .python-list .recommend {
   cursor: pointer;
   margin-bottom: 25px;
-  margin-right: 12px;
-  width: 245px;
+  margin-right: 16px;
+  width: 230px;
 }
 
 .python-list img {
   height: 150px;
-  width: 240px;
+  width: 230px;
 }
 
 .python-list h5 {
@@ -308,81 +291,100 @@ button {
     justify-content: space-between;
   }
 
-  #ude-bs {
+  .usemy-business {
     display: none;
   }
 
-  .search-text {
+  .search-box {
     width: 540px;
   }
 
-  .headerphotowithtext .text {
+  .page-header .text {
     top: 30px;
     left: 80px;
   }
 }
 
 @media (max-width: 1200px) {
-  #ude-bs {
+  .udemy-business {
     display: none;
   }
 
-  .search-text {
+  .search-box {
     width: 350px;
   }
 
-  .headerphotowithtext .text {
+  .page-header .text {
     left: 70px;
     top: 20px;
   }
 }
 
 @media (max-width: 980px) {
-  #te-ude {
+  .teach-udemy {
     display: none;
   }
 
-  .search-text {
-    width: 340px;
+  .search-box {
+    width: 320px;
   }
 
-  .headerphotowithtext .text {
+  .page-header .text {
     left: 50px;
     top: 10px;
   }
 }
 
 @media (max-width: 900px) {
-  #bars-icon button,
-  #fa-se {
+
+  .bars-icon button,
+  .search-icon-small-window {
     display: inline;
   }
 
-  .headerphotowithtext .text,
-  .logIn,
-  .signUp,
-  .lang,
+  .log-in,
+  .sign-up,
+  .language-icon,
   .search-box,
-  #cate {
+  .category {
     display: none;
   }
 
-  .headerphotowithtext .small-text {
-    display: block;
-    text-align: center;
+  .page-header .text {
+    position: static;
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    box-shadow: none;
+    margin: 0;
+    padding: 0;
+    justify-content: space-between;
+    align-items: center;
   }
 
-  .headerphotowithtext h1 {
+  .page-header p {
+    font-size: 22px;
+  }
+
+  .page-header h1 {
     font-size: 35px;
+  }
+
+  .edu {
+    padding-right: 270px;
   }
 }
 
 @media (max-width: 500px) {
-  .headerphotowithtext h1 {
-    font-size: 16px;
+  .page-header h1 {
+    font-size: 30px;
   }
 
-  .headerphotowithtext p {
+  .page-header p {
     display: inline;
+  }
+
+  .edu {
+    padding-right: 50px;
   }
 }
