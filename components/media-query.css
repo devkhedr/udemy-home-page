@@ -1,0 +1,122 @@
+@media (max-width: 1250px) {
+  .navbar {
+    justify-content: space-between;
+  }
+
+  .usemy-business {
+    display: none;
+  }
+
+  .search-box {
+    width: 540px;
+  }
+
+  .page-header .text {
+    top: 30px;
+    left: 80px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .udemy-business {
+    display: none;
+  }
+
+  .search-box {
+    width: 350px;
+  }
+
+  .page-header .text {
+    left: 70px;
+    top: 20px;
+  }
+}
+
+@media (max-width: 980px) {
+  .teach-udemy {
+    display: none;
+  }
+
+  .search-box {
+    width: 320px;
+  }
+
+  .page-header .text {
+    left: 50px;
+    top: 10px;
+  }
+}
+
+@media (max-width: 900px) {
+
+  .bars-icon button,
+  .search-icon-small-window {
+    display: inline;
+  }
+
+  .log-in,
+  .sign-up,
+  .language-icon,
+  .search-box,
+  .category {
+    display: none;
+  }
+
+  .page-header .text {
+    position: static;
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    box-shadow: none;
+    margin: 0;
+    padding: 0;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .page-header p {
+    font-size: 22px;
+  }
+
+  .page-header h1 {
+    font-size: 35px;
+  }
+
+  .edu {
+    padding-right: 270px;
+  }
+}
+
+@media (max-width: 500px) {
+  .page-header h1 {
+    font-size: 30px;
+  }
+
+  .page-header p {
+    display: inline;
+  }
+
+  .edu {
+    padding-right: 100px;
+  }
+
+  .cart-search-small-window {
+    display: none;
+  }
+}
+
+@media (max-width: 300px) {
+  .edu {
+    padding: 0px 0px 0px 10px;
+    margin: 0;
+  }
+
+  .python-list .recommend {
+    width: 200px;
+  }
+  
+  .python-list img {
+    height: 150px;
+    width: 200px;
+  }
+}
