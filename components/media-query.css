@@ -103,6 +103,7 @@
   .cart-search-small-window {
     display: none;
   }
+
 }
 
 @media (max-width: 300px) {
@@ -118,5 +119,9 @@
   .python-list img {
     height: 150px;
     width: 200px;
+  }
+
+  .bars-icon {
+    display: none;
   }
 }
