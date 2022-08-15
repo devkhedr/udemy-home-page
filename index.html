@@ -23,25 +23,25 @@
         </li>
         <li>
           <a href="index.html">
-            <img alt="logo" class="nav-logo" src="assets/logo/udemy_logo.svg" />
+            <img
+              alt="logo"
+              class="nav-logo"
+              src="assets/logo/udemy_logo.svg"
+            />
           </a>
         </li>
         <li class="category">
           <button>Categories</button>
         </li>
-        <li class="search-box" id="search-box">
-          <form>
-            <button type="submit" class="search-icon" id="search-icon">
-              <i class="fa fa-search"></i>
-            </button>
-            <input
-              placeholder="Search for anything"
-              class="search-text"
-              id="search-text"
-              autocomplete="off"
-              required
-            />
-          </form>
+        <li class="search-box">
+          <button type="submit" class="search-icon">
+            <i class="fa fa-search"></i>
+          </button>
+          <input
+            placeholder="Search for anything"
+            class="search-text"
+            required
+          />
         </li>
         <li class="udemy-business">
           <button>Udemy Business</button>
@@ -49,7 +49,7 @@
         <li class="teach-udemy">
           <button>Teach on Udemy</button>
         </li>
-        <li class="cart-search-small-window">
+        <li class = "cart-search-small-window">
           <button class="search-icon-small-window">
             <i class="fa fa-search"></i>
           </button>
@@ -74,51 +74,165 @@
         </li>
       </ul>
     </header>
-    <div class="container">
-      <div class="child">
-        <div class="page-header">
-          <img src="assets/header/header-photo.jpg" />
-          <div class="text">
-            <h1>Learning that gets you</h1>
-            <p>
-              Skills for your present (and your future). Get started with us.
-            </p>
+    <section class="container">
+      <div class="page-header">
+        <img src="assets/header/header-photo.jpg" />
+        <div class="text">
+          <h1>Learning that gets you</h1>
+          <p>Skills for your present (and your future). Get started with us.</p>
+        </div>
+      </div>
+      <section class="edu">
+        <h1>A broad selection of courses</h1>
+        <p>
+          Choose from 185,000 online video courses with new additions published
+          every month
+        </p>
+        <div class="tabs">
+          <button style="color: black">Python</button>
+          <button>Excel</button>
+          <button>Web Development</button>
+          <button>JavaScript</button>
+          <button>Data Science</button>
+          <button>AWS Certification</button>
+          <button>Drawing</button>
+        </div>
+      </section>
+      <section class="courses">
+        <div class="python-intro">
+          <h1>Expand your career opportunities with Python</h1>
+          <p>
+            Take one of Udemy’s range of Python courses and learn how to code
+            using this incredibly useful language. Its<br />
+            simple syntax and readability makes Python perfect for Flask ,
+            Django, data science, and machine learning. You'll <br />
+            learn how to build everything from games to sites to apps. Choose
+            from a range of courses that will appeal to...
+          </p>
+          <button class="explore-button">Explore Python</button>
+        </div>
+        <div class="python-list">
+          <div class="recommend">
+            <img src="assets/courses/python/python1.jpg"/>
+            <h5>Learn Python: The Complete Python Programming Course</h5>
+            <span class="authorName">Avinash Jain, The Codex </span>
+            <span class="rate">
+              4.4
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-half-stroke"></i>
+              <span class="number"> (2,906) </span>
+            </span>
+
+            <span class="price"> E&pound;679.99 </span>
+            <button></button>
+          </div>
+
+          <div class="recommend">
+            <img src="assets/courses/python/python2.jpg"/>
+            <h5>Learning Python for Data Analysis and Visualization</h5>
+            <span class="authorName">Jose Portilla</span>
+            <span class="rate">
+              4.4
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <span class="number"> (17,981) </span>
+            </span>
+            <span class="price"> E&pound;1,599.99 </span>
+            <button class="bestseller">Bestseller</button>
+          </div>
+
+          <div class="recommend">
+            <img src="assets/courses/python/python3.jpg"/>
+            <h5>Python for Beginners - Learn Programming from scratch</h5>
+            <span class="authorName">Edwin diaz</span>
+            <span class="rate">
+              4.4
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-half-stroke"></i>
+              <span class="number"> (1,762) </span>
+            </span>
+            <span class="price"> E&pound;679.99 </span>
+            <button></button>
+          </div>
+
+          <div class="recommend">
+            <img src="assets/courses/python/python4.jpg"/>
+            <h5>Learn Python: Python for Beginners with OOP</h5>
+            <span class="authorName">Abrar hossam </span>
+            <span class="rate">
+              4.2
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-half-stroke"></i>
+              <span class="number"> (2,766) </span>
+            </span>
+            <span class="price"> E&pound;319.99 </span>
+            <button></button>
+          </div>
+
+          <div class="recommend">
+            <img src="assets/courses/python/python5.jpg"/>
+            <h5>Python Beyond the Basics - Object-Oriented Programming</h5>
+            <span class="authorName">Adams ai</span>
+            <span class="rate">
+              4.4
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <span class="number"> (2,929) </span>
+            </span>
+            <span class="price"> E&pound;519.99 </span>
+            <button class="bestseller">Bestseller</button>
+          </div>
+          <div class="recommend">
+            <img src="assets/courses/python/python4.jpg"/>
+            <h5>Learn Python from zero to hero 2022</h5>
+            <span class="authorName">Bassem Amin</span>
+            <span class="rate">
+              4.5
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <span class="number"> (1,200) </span>
+            </span>
+            <span class="price"> E&pound;519.99 </span>
+            <button class="bestseller">Bestseller</button>
+          </div>
+
+          <div class="recommend">
+            <img src="assets/courses/python/python5.jpg"/>
+            <h5>Learn Python for ML and Data Science 2022</h5>
+            <span class="authorName">Harry Maguire</span>
+            <span class="rate">
+              4.5
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <span class="number"> (1,200) </span>
+            </span>
+            <span class="price"> E&pound;519.99 </span>
+            <button></button>
           </div>
         </div>
-        <section class="edu">
-          <h1>A broad selection of courses</h1>
-          <p>
-            Choose from 185,000 online video courses with new additions
-            published every month
-          </p>
-          <div class="tabs">
-            <button style="color: black">Python</button>
-            <button>Excel</button>
-            <button>Web Development</button>
-            <button>JavaScript</button>
-            <button>Data Science</button>
-            <button>AWS Certification</button>
-            <button>Drawing</button>
-          </div>
-        </section>
-        <section class="courses" id="courses">
-          <div class="python-intro">
-            <h1>Expand your career opportunities with Python</h1>
-            <p>
-              Take one of Udemy’s range of Python courses and learn how to code
-              using this incredibly useful language. Its<br />
-              simple syntax and readability makes Python perfect for Flask ,
-              Django, data science, and machine learning. You'll <br />
-              learn how to build everything from games to sites to apps. Choose
-              from a range of courses that will appeal to...
-            </p>
-            <button class="explore-button">Explore Python</button>
-          </div>
-          <div class="python-list" id="python-list"></div>
-        </section>
-      </div>
-    </div>
+      </section>
+    </section>
     <footer></footer>
-    <script src="./scripts/main.js"></script>
   </body>
 </html>
