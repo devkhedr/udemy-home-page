@@ -33,14 +33,18 @@
   border: 1px solid black;
   align-items: center;
   border-radius: 60px;
-  padding-left: 10px;
+  padding: 3px 0px 3px 11px ;
   background-color: #f5f5f5;
   margin-right: 12px;
   margin-left: 10px;
+  width: 10%;
 }
-
+.search-box form {
+  display: flex;
+  width: 100%;
+}
 .search-box .search-icon {
-  font-size: 14px;
+  font-size: 15px;
   background-color: #f5f5f5;
   color: #a5a5a5;
   cursor: default;
@@ -50,7 +54,7 @@
 .search-text {
   border: 0;
   margin-left: 10px;
-  font-size: 14px;
+  font-size: 15px;
   height: 38px;
   width: 100%;
   background-color: #f5f5f5;
