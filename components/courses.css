@@ -4,6 +4,7 @@
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   margin-top: 10px;
   padding-left: 30px;
+  padding-right: 20px;
 }
 
 .courses .python-intro h1 {
@@ -42,7 +43,7 @@
 .python-list .recommend {
   cursor: pointer;
   margin-bottom: 25px;
-  margin-right: 16px;
+  margin-right: 20px;
   width: 230px;
 }
 
