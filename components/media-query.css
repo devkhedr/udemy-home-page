@@ -78,7 +78,7 @@
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 520px) {
   .page-header h1 {
     font-size: 30px;
   }
@@ -94,7 +94,14 @@
   .cart-search-small-window {
     display: none;
   }
-
+  .courses-list .recommend {
+    width: 420px;
+  }
+  
+  .courses-list img {
+    height: 300px;
+    width: 420px;
+  }
 }
 
 @media (max-width: 300px) {
