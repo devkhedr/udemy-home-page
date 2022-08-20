@@ -12,7 +12,7 @@ let cur_course = "Python";
 let section = document.querySelector(".courses");
 let data;
 function fetchdata() {
-  const response = fetch("https://api.npoint.io/f448aa5d80c56dda24a4")
+  const response = fetch("https://api.jsonbin.io/v3/b/63007c245c146d63ca771db2")
     .then((response) => response.json())
     .then((res) => {
       data = res;
@@ -59,7 +59,7 @@ function searchState (found, search) {
     Try adjusting your search. Here are some ideas:</b>
     <br><br>
     <ul>
-      <li>Make sure all words are spelled correctly</li>
+      &nbsp<li>Make sure all words are spelled correctly</li>
       <li>Try different search terms</li>
       <li>Try more general search terms</li>
     </ul>
@@ -94,17 +94,10 @@ function make_cards_list(course = "", search = undefined) {
     }
   }
   const ret = searchState(found, search);
-  if(search == undefined) {
-    section.appendChild(cards_container);
-  }
-  else if((search != undefined) && found) {
-    section.innerHTML += ret;
-    section.appendChild(cards_container);
-  }
-  else if((search != undefined) && !found) {
+  if(search != undefined && search != "") {
     section.innerHTML += ret;
   }
-  
+  section.appendChild(cards_container);
 }
 
 function make_card(course, item) {
@@ -135,6 +128,7 @@ function make_card(course, item) {
 
 fetchdata();
 
+// move between tabs
 for (const item in courses) {
   const course = document.getElementById(courses[item]);
   course.addEventListener("change", function () {
@@ -151,13 +145,10 @@ function build_search(searchvalue) {
 }
 
 // search on submit in search bar
-document.forms[0].onsubmit = function (e) {
+const click_search = document.querySelector("[class = 'search-icon']")
+click_search.addEventListener("click", (e) => {
   e.preventDefault();
   let searchvalue = document.querySelector("[class = 'search-text']").value;
-  let x = searchvalue.split(" ").length - 1;
   document.getElementById("courses").scrollIntoView({behavior: "smooth", block: "start"});
-  // prevent searching on empty or only spaces values
-  if (searchvalue !== "" && x !== searchvalue.length) {
-    build_search(searchvalue);
-  }
-};
+  build_search(searchvalue);
+});
