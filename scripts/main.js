@@ -38,10 +38,12 @@ let getStars = function (courseRate) {
 function build_description(course) {
   section.innerHTML = "";
   const description = `
+    <div class = "course-intro">
       <h1>${data.record[course].header}</h1>
       <p>${data.record[course].description}</p>
       <button class="explore-button"> Explore ${course} </button> 
-  `;
+    </div>
+    `;
   section.innerHTML += description;
   make_cards_list(course);
 }
