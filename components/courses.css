@@ -7,13 +7,16 @@
   max-width: 1310px;
 }
 
-.courses h1 {
+.courses .course-intro {
+  max-width: 70%;
+}
+.courses .course-intro h1 {
   font-size: 28px;
   margin-bottom: 15px;
   margin-left: 20px;
 }
 
-.courses p {
+.courses .course-intro p {
   font-family: system-ui;
   font-size: 17px;
   margin-left: 20px;
