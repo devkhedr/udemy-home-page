@@ -103,12 +103,12 @@
     margin: 0;
   }
 
-  .python-list .recommend {
-    width: 100px;
+  .courses-list .recommend {
+    width: 240px;
   }
   
-  .python-list img {
+  .courses-list img {
     height: 150px;
-    width: 200px;
+    width: 240px;
   }
 }
