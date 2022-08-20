@@ -1,11 +1,15 @@
-.container,
+.page-container,
 .page-header {
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
+  max-width: 100%;
 }
-
+.page-child {
+  display: flex;
+  flex-direction: column;
+}
 .page-header img {
   max-width: 100%;
 }
@@ -14,7 +18,7 @@
   position: absolute;
   top: 30px;
   left: 90px;
-  padding-left: 20px;
+  padding: 15px 0px 0px 25px;
   margin: 50px 50px 0px 0px;
   border: 0px solid white;
   background-color: white;
@@ -23,5 +27,6 @@
 }
 
 .page-header h1 {
-  margin-bottom: 0;
+  font-size: 35px;
+  margin-bottom: 10px;
 }
