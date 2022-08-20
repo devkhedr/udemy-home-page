@@ -1,14 +1,14 @@
-@media (max-width: 1250px) {
+@media (max-width: 1290px) {
   .navbar {
     justify-content: space-between;
   }
 
-  .usemy-business {
+  .udemy-business {
     display: none;
   }
 
   .search-box {
-    width: 540px;
+    width: 350px;
   }
 
   .page-header .text {
@@ -18,14 +18,9 @@
 }
 
 @media (max-width: 1200px) {
-  .udemy-business {
-    display: none;
-  }
-
   .search-box {
     width: 350px;
   }
-
   .page-header .text {
     left: 70px;
     top: 20px;
@@ -42,9 +37,17 @@
   }
 
   .page-header .text {
-    left: 50px;
-    top: 10px;
+    position: static;
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    box-shadow: none;
+    margin: 0;
+    padding: 20px 0px 0px 20px;
+    justify-content: space-between;
+    align-items: center;
   }
+
 }
 
 @media (max-width: 900px) {
@@ -53,7 +56,6 @@
   .search-icon-small-window {
     display: inline;
   }
-
   .log-in,
   .sign-up,
   .language-icon,
@@ -62,17 +64,6 @@
     display: none;
   }
 
-  .page-header .text {
-    position: static;
-    display: flex;
-    flex-direction: column;
-    max-width: 100%;
-    box-shadow: none;
-    margin: 0;
-    padding: 0;
-    justify-content: space-between;
-    align-items: center;
-  }
 
   .page-header p {
     font-size: 22px;
@@ -113,7 +104,7 @@
   }
 
   .python-list .recommend {
-    width: 200px;
+    width: 100px;
   }
   
   .python-list img {
