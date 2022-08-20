@@ -6,7 +6,6 @@
   list-style-type: none;
   align-items: center;
 }
-
 .nav-logo {
   width: 90px;
   margin: 0px 10px 0px 15px;
@@ -20,10 +19,21 @@
 .bars-icon button {
   font-size: 30px;
   display: none;
+  border: none;
+  outline: none;
+  position: relative;
 }
 
 .navbar button {
   background-color: rgb(255, 255, 255);
+  border: none;
+  outline: none;
+  position: relative;
+}
+.navbar button:focus {
+  border: none;
+  outline: none;
+  position: relative;
 }
 
 .search-box {
