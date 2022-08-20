@@ -1,0 +1,18 @@
+.container {
+  padding: 0;
+  margin: 35px 0px 0px 0px;
+}
+.container h3 {
+  font-weight: bold;
+}
+.col-lg-3 {
+  cursor: pointer;
+  margin: 20px 0px 20px 0px;
+}
+.container img {
+  transition: 0.3s all ease-in-out
+}
+.container img:hover {
+   transform: scale(1.06)
+}
+ 
