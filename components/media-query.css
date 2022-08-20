@@ -94,14 +94,6 @@
   .cart-search-small-window {
     display: none;
   }
-  .courses-list .recommend {
-    width: 420px;
-  }
-  
-  .courses-list img {
-    height: 300px;
-    width: 420px;
-  }
 }
 
 @media (max-width: 300px) {
