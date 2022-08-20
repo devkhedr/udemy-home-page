@@ -2,93 +2,95 @@
   border: 0.1rem solid rgb(202, 202, 202);
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  margin-top: 10px;
-  padding-left: 30px;
-  padding-right: 20px;
+  padding: 25px 0px 0px 0px;
+  margin: 0px 10px;
+  max-width: 1310px;
 }
 
-.courses .python-intro h1 {
+.courses h1 {
   font-size: 28px;
-  margin-bottom: 0;
+  margin-bottom: 15px;
+  margin-left: 20px;
 }
 
 .courses p {
   font-family: system-ui;
   font-size: 17px;
+  margin-left: 20px;
 }
 
 .courses .explore-button {
   height: 40px;
-  width: 120px;
   font-size: 12px;
-  border: 1px solid black;
+  border: 0.1rem solid black;
   background-color: white;
-  font-weight: bold;
+  font-size: 14px;
+  padding: 0px 10px;
   border-radius: 2px;
-  margin: 10px 0px;
   margin-bottom: 20px;
+  font-weight: 600;
+  margin-left: 20px;
 }
 
 .courses .explore-button:hover {
   background-color: rgb(226, 226, 226);
 }
 
-.python-list {
+.courses-list {
   display: flex;
   flex-wrap: wrap;
-  max-width: 1310px;
   align-items: center;
+  justify-content: space-evenly;
 }
 
-.python-list .recommend {
+.courses-list .recommend {
   cursor: pointer;
   margin-bottom: 25px;
-  margin-right: 20px;
   width: 230px;
 }
 
-.python-list img {
+.courses-list img {
   height: 150px;
   width: 230px;
 }
 
-.python-list h5 {
+.courses-list h5 {
   font-size: 16px;
   margin-top: 10px;
   margin-bottom: 0;
 }
 
-.python-list .authorName {
+.courses-list .authorName {
   font-size: 12px;
   color: rgb(110, 110, 110);
   margin: 5px 0px;
   display: block;
 }
 
-.python-list .rate {
+.courses-list .rate {
   font-size: 12px;
   color: rgb(185, 158, 0);
   font-weight: bolder;
 }
 
-.python-list .number {
+.courses-list .number {
   color: rgb(110, 110, 110);
   font-weight: 400;
 }
 
-.python-list .price {
+.courses-list .price {
   display: block;
   margin: 7px 0px;
   font-weight: bolder;
   font-size: 15px;
 }
 
-.python-list button {
+.courses-list button {
   border: 0px;
   background-color: rgb(255, 255, 255);
 }
 
-.python-list .bestseller {
+.courses-list .bestseller {
   cursor: default;
   background-color: #eceb98;
   font-size: 12px;
