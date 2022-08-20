@@ -1,10 +1,9 @@
 .edu {
-  max-width: 100%;
-  margin-top: 10px;
+  margin: 0;
   padding-left: 20px;
   display: flex;
   flex-direction: column;
-  padding-right: 530px;
+  padding-right: 0;
 }
 
 .edu h1 {
@@ -20,18 +19,34 @@
   font-family: system-ui;
 }
 
-.edu .tabs button {
-  border: 0;
-  padding: 15px 0px;
-  cursor: pointer;
-  color: rgb(146, 146, 146);
-  background-color: white;
-  font-weight: bolder;
-  font-size: 16px;
-  padding-right: 20px;
-  width: auto;
+.courses-tabs{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin: 10px 0px 15px 0px;
+  font-size: 17px;
 }
 
-.edu .tabs button:hover {
+.courses-tabs input{
+  display: none;
   color: black;
+}
+
+.courses-tabs label{
+  display: inline-block;
+  font-weight: 600;
+  color: rgb(153, 153, 153);
+}
+
+.courses-tabs input:checked + label{
+  color:black;
+  font-weight: 600;
+}
+
+.courses-tabs input:hover + label
+{
+  color:black;
+  cursor: pointer;
+  transform: scale(1.08);
+  font-weight: 600;
 }
