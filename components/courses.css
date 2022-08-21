@@ -42,19 +42,20 @@
 .courses-list {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-evenly;
+  gap: 18px;
+  justify-content: center;
 }
 
 .courses-list .recommend {
   cursor: pointer;
   margin-bottom: 25px;
-  width: 240px;
+  width: 230px;
 }
 
 .courses-list img {
-  height: 150px;
-  width: 240px;
+  height: 140px;
+  width: 230px;
+  border: 0.1rem solid rgb(207, 207, 207);
 }
 
 .courses-list h5 {
@@ -93,12 +94,43 @@
   background-color: rgb(255, 255, 255);
 }
 
-.courses-list .bestseller {
-  cursor: default;
-  background-color: #eceb98;
-  font-size: 12px;
-  color: rgb(13, 77, 0);
-  font-weight: bold;
-  width: 70px;
-  border: 0px;
+.carousel-control-prevv {
+  position: absolute;
+  top: 90px;
+  left: 8px;
+  outline: none;
+  height: 45px;
+  width: 45px;
+  background-color: black;
+  padding: 0;
+  border-radius: 50%;
+  border: none;
+  outline: none;
+  transition: 0.3s;
+}
+.carousel-control-nextt {
+  position: absolute;
+  top: 90px;
+  right: 8px;
+  outline: none;
+  height: 45px;
+  width: 45px;
+  background-color: black;
+  padding: 0;
+  border-radius: 50%;
+  border: none;
+  outline: none;
+  transition: 0.3s;
+}
+.carousel-control-prevv:focus {
+  outline: none;
+}
+.carousel-control-nextt:focus {
+  outline: none;
+}
+.carousel-control-prevv:hover {
+  opacity: 0.4;
+}
+.carousel-control-nextt:hover {
+  opacity: 0.4;
 }
