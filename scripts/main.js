@@ -91,12 +91,7 @@ function checkOnWindowwSize() {
 
 }
 
-checkOnWindowwSize();
 
-window.addEventListener('resize', function () {
-  checkOnWindowwSize();
-  buildCoursecourseSection(curCourse);
-})
 
 function makeCourseCards(course = "", search = undefined) {
   let cardsContainer = document.createElement("div");
@@ -222,3 +217,17 @@ click_search.addEventListener("click", (e) => {
     });
   buildSearch(searchvalue);
 });
+
+checkOnWindowwSize();
+
+window.addEventListener('resize', function () {
+  checkOnWindowwSize();
+  let searchvalue = document.querySelector("[class = 'search-text']").value;
+  courseSection.innerHTML = "";
+  if(searchvalue != "") {
+    buildSearch(searchvalue);
+  }
+  else {
+    makeCourseCards(curCourse);
+  }
+})
